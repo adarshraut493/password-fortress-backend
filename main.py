@@ -6,7 +6,9 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3001"],  # frontend address
+    allow_origins=[
+        "https://inquisitive-kleicha-27d717.netlify.app"
+    ],  # 👈 your Netlify URL
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
